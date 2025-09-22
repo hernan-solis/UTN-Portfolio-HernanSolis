@@ -31,9 +31,18 @@ p {
 .redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
+    gap: 20px;
 }
+.habilidadesTecnicas {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .imgFotoPerfil {
     width: 400px;
@@ -121,7 +130,7 @@ p {
 
 .menu-top {
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     font-weight: bold;
     padding: 10px 40px;
