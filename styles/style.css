@@ -1,7 +1,6 @@
 * {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -122,20 +121,80 @@ p {
 
 .menu-top {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
+    font-weight: bold;
+    padding: 10px 40px;
+    background-color: #f8f9fa; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 }
 
 .menu-top ul {
-    display: flex;         
-    flex-direction: row;    
-    list-style: none;      
-    padding: 0;
-    margin: 0;
+    display: flex;
     gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-top li {
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-top li:hover {
+    color: #007bff;
+    transform: scale(1.05); 
+}
+
+.menu-top ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-top li a {
+    text-decoration: none;
+    color: black; 
+    transition: color 0.3s ease;
+}
+
+.menu-top li a:hover {
+    color: #007bff;
+}
+
+
+.contacto form {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      
+    gap: 15px;                
+    max-width: 400px;        
+    width: 100%;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;            
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contacto button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #0056b3;
 }
